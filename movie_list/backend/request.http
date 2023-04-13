@@ -1,0 +1,33 @@
+###
+GET http://127.0.0.1:3001/movies
+
+
+###
+GET http://localhost:3001/movies/2
+###
+GET http://localhost:3001/movies/search?term=barnie
+
+###
+POST http://localhost:3001/movies
+Content-Type: application/json
+
+{
+    "movie_name": "Barnie",
+    "released_date": "1990-04-15",
+    "run_time": 82,
+    "rating": 1.2
+}
+
+###
+PATCH http://localhost:3001/movies/3
+Content-Type: application/json
+
+{
+    "movie_name": "Le Dark Knight 2",
+    "released_date": "2010-07-16",
+    "run_time": 148,
+    "rating": 4.5
+}
+
+###
+DELETE http://localhost:3001/movies/7
