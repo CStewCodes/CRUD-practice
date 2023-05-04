@@ -1,0 +1,20 @@
+{
+  "name": "to-do-app",
+  "version": "1.0.0",
+  "description": "This app is going to be a ToDo app that basically starts with an field input and then a button that says \"save task\" When the button is clicked, then it shows the task under the text input field. Then there will be a button next to that-- \"Done\" that when clicked, it will be moved to a new database.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22",
+    "pg": "^8.10.0"
+  }
+}

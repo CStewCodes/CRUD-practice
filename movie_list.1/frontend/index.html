@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
     <title>movie_list crud practice</title>
 </head>
 <body>
@@ -16,10 +17,18 @@
         <div class="box"><h1>Search your favorite movies!</h1></div>
         <div class="box"><h2>Just type the name of the movie</h2></div>
         <span>
-            <input type="text" name="search" id="text-search">
+            <input type="text" name="search" id="text-search" placeholder="Search movie name">
             <button type="submit" id="search-button">Search</button>
         </span> 
+        <div class="box"><p>Add a movie here</p>
+            <input type="text" name="movie" id="movie-name" placeholder="Movie Name">
+            <input type="text" name="release-date" id="release-date" placeholder="Release date">
+            <input type="text" name="run-time" id="run-time" placeholder="Run Time">
+            <input type="text" name="rating" id="rating" placeholder="Rating">
+            <button type="submit" id="add-movie-button">Add a Movie</button>
+        </div>
     </div>
+    <div class="results"></div>
    
 </body>
 </html>
